@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="loginInputStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="background">@drawable/line_et_bg</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:layout_marginStart">@dimen/dp_16</item>
+        <item name="android:layout_marginEnd">@dimen/dp_16</item>
+        <item name="android:textColor">@color/alwaysTextColor</item>
+        <item name="android:textColorHint">@color/alwaysTextColor</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="productHint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/productHint</item>
+        <item name="android:textSize">@dimen/dp_12</item>
+    </style>
+
+    <style name="productText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/alwaysTextColor</item>
+        <item name="android:textSize">@dimen/dp_12</item>
+    </style>
+
+    <style name="RadioButtonStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@drawable/main_navigation_text_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+    </style>
+
+    <style name="hintStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dp_12</item>
+        <item name="android:textColor">@color/alwaysTextColor</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+</resources>

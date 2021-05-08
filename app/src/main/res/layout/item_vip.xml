@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_42">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/hintStyle"
+        android:layout_marginStart="@dimen/dp_15"
+        android:text="姓名" />
+
+    <TextView
+        android:id="@+id/tv_sex"
+        style="@style/hintStyle"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_toEndOf="@id/tv_name"
+        android:text="性别" />
+
+    <TextView
+        android:id="@+id/tv_real_status"
+        style="@style/hintStyle"
+        android:layout_marginEnd="@dimen/dp_32"
+        android:layout_toStartOf="@id/tv_time"
+        android:text="认证状态" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        style="@style/hintStyle"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:layout_toStartOf="@id/tv_real_status"
+        android:text="认证状态" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/hintStyle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:text="注册时间" />
+
+</RelativeLayout>

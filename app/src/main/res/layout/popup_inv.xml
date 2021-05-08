@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_300"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bg_login">
+
+    <ImageView
+        android:id="@+id/iv_inv"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_200"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_25"
+        android:text="是否要卖出当前产品？"
+        android:textColor="@color/alwaysTextColor"
+        android:textSize="@dimen/dp_20" />
+
+    <Button
+        android:id="@+id/bt_inv_url"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/iv_inv"
+        android:layout_marginTop="@dimen/dp_25"
+        android:background="@drawable/bg_cancle"
+        android:text="复制邀请链接"
+        android:layout_marginStart="@dimen/dp_17"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_12" />
+
+    <Button
+        android:id="@+id/bt_inv_pic"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/iv_inv"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp_17"
+        android:background="@drawable/bg_confirm"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_12" />
+
+</RelativeLayout>

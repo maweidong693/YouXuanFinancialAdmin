@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ab_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_75"
+        android:background="@drawable/bg_money_mangement"
+        app:elevation="@dimen/dp_0">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dp_30"
+            android:minHeight="?attr/actionBarSize"
+            tools:targetApi="lollipop">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="@string/vipList"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_19"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_below="@id/ab_main"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingEnd="@dimen/dp_15">
+
+        <TextView
+            android:id="@+id/tv_name_hint"
+            style="@style/hintStyle"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/tv_sex_hint"
+            style="@style/hintStyle"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_toEndOf="@id/tv_name_hint"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/tv_real_status_hint"
+            style="@style/hintStyle"
+            android:layout_marginEnd="@dimen/dp_45"
+            android:layout_toStartOf="@id/tv_time_hint"
+            android:text="认证状态" />
+
+        <TextView
+            android:id="@+id/tv_phone_hint"
+            style="@style/hintStyle"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:layout_toStartOf="@id/tv_real_status_hint"
+            android:text="手机号" />
+
+        <TextView
+            android:id="@+id/tv_time_hint"
+            style="@style/hintStyle"
+            android:layout_alignParentEnd="true"
+            android:text="注册时间" />
+
+        <include
+            layout="@layout/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bt_inv"
+        android:layout_below="@id/rl_main">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <Button
+        android:id="@+id/bt_inv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_above="@id/bt_out_login"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/bg_them_click"
+        android:text="邀请会员"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/bt_out_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:background="@drawable/bg_them_click"
+        android:text="退出登录"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
